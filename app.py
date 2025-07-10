@@ -1,4 +1,4 @@
-import wheather
+import weather
 import news
 
 
@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     #1 - Buscar previsão do tempo
     print("\n Buscando previsão do tempo...")
-    previsao = wheather.buscar_previsao_tempo()
+    previsao = weather.buscar_previsao_tempo()
     print(previsao)  # Exibe a previsão do tempo no console
 
     #2 - MAPS
