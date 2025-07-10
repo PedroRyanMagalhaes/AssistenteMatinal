@@ -1,1 +1,13 @@
 config.py
+__pycache__/
+.env
+.venv
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+*.egg
+*.sqlite3
+*.db
