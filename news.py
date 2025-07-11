@@ -4,9 +4,7 @@ import config
 def buscar_noticias(categoria, quant=2):
     
     """
-    Busca uma quantidade definida de manchetes de uma categoria específica.
-    Retorna uma string formatada ou uma mensagem de erro.
-    'quantidade' tem um valor padrão de 1 se não for especificado.
+    Busca uma quantidade definida de noticias de uma categoria.
     """
 
     if not config.NewsApi_Key:
@@ -48,8 +46,8 @@ if __name__ == "__main__":
     print ("-----Teste de noticias-----")
     
     noticias_tec = buscar_noticias("technology", 2)
-    print(noticias_tec)  # Exibe as notícias de tecnologia no console
+    print(noticias_tec)  
 
     noticias_ent= buscar_noticias("entertainment", 2)
-    print(noticias_ent)  # Exibe as notícias de entretenimento no console
+    print(noticias_ent) 
     
