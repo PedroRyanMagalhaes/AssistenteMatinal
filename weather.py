@@ -7,7 +7,7 @@ import config
 """
 def buscar_previsao_tempo():
     if not config.Weather_api_key in config.Weather_api_key:
-        return "Chave API do OpenWeatherMap fora do ar."
+        return "Chave API weather fora do ar."
     
     # Este é o endereço base da API do OpenWeatherMap para previsão do tempo atual
     url_base = "http://api.weatherapi.com/v1/forecast.json"
@@ -47,10 +47,10 @@ def buscar_previsao_tempo():
         # Montamos a nossa string final com as informações formatadas.
         # O :.0f formata o número para não ter casas decimais.
         texto_clima = (
-            f"Clima {descricao}\n"
-            f"Temperatura atual: {temp_atual: .0f}°C\n"
-            f"Máxima de hoje: {temp_max: .0f}°C\n"
-            f"Mínima de hoje: {temp_min: .0f}°C"
+            f"{descricao}\n"
+            f"Current weather: {temp_atual: .0f}°C\n"
+            f"Max: {temp_max: .0f}°C\n"
+            f"Min: {temp_min: .0f}°C"
         )
         return texto_clima  # Retorna a string formatada com as informações do clima
     

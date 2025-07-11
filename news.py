@@ -10,7 +10,7 @@ def buscar_noticias(categoria, quant=2):
     """
 
     if not config.NewsApi_Key:
-        return "Chave de API não configurada."
+        return "Chave de API news não configurada."
     
     url_base = "https://newsapi.org/v2/top-headlines"
 
@@ -31,7 +31,7 @@ def buscar_noticias(categoria, quant=2):
         if not artigos:
             return f"Nenhuma notícia da {categoria} encontrada."
         
-        manchetes = [f"Manchete de {categoria.capitalize()}:"]
+        manchetes = [f"News about {categoria.capitalize()}:"]
         for artigo in artigos:
             manchetes.append(f"- {artigo['title']}")
 
